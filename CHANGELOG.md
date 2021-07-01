@@ -5,6 +5,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [3.0.0] - 21.06.2021
+### Changed
+- Moved prerelase nullsafety version as a regular release
+- Updated cached_network_image, html_unescape
+
+## [2.5.0-nullsafety.2] - 29.03.2021
+### Changed
+- Fix formatting
+
+## [2.5.0-nullsafety.1] - 26.03.2021
+### Changed
+- Fix formatting
+
+## [2.5.0-nullsafety.0] - 26.03.2021
+### Changed
+- Migrated to nullsafety with Dart 2.12
+
 ## [2.4.2] - 10.12.2020
 ### Changed
 - Fixed Textoverflow in `RetweetInformation`
@@ -33,6 +51,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update cached_network_image, video_player, photo_view, url_launcher, html_unescape
 ### Fixed
 - Respect favorited value in EmbeddedTweetView schibsted/tweet_ui#52
+
+## [2.2.0+2] - 17.07.2020
+### Changed
+- Fix formating
+
+## [2.2.0+1] - 17.07.2020
+### Changed
+- Update video_player and url_launcher
+- Improve documentation
+- Fix formating
+
+## [2.2.0+3] - 17.07.2020
+### Changed
+- Fix formating
 
 ## [2.2.0+2] - 17.07.2020
 ### Changed
