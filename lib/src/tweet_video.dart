@@ -31,6 +31,7 @@ class _TweetVideoState extends State<TweetVideo>
   @override
   void initState() {
     super.initState();
+    print("Init BetterPlayer");
     betterPlayerConfiguration = BetterPlayerConfiguration(
       placeholder: Center(
         child: SizedBox(
@@ -80,6 +81,7 @@ class _TweetVideoState extends State<TweetVideo>
               )
             : Container(),
       ),
+
     );
     var videoUrl = widget.videoHighQuality
         ? widget.tweetVM.getDisplayTweet().videoUrls.values.last

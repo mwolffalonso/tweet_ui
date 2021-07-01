@@ -43,16 +43,22 @@ class _AnimatedPlayButtonState extends State<AnimatedPlayButton>
       _controller.reverse().then((_) {
         Navigator.push(context, MaterialPageRoute(
           builder: (_) {
-            return WillPopScope(
-              child: TweetVideo(
-                widget.tweetVM.getDisplayTweet(),
-                autoPlay: true,
-                enableFullscreen: false,
-                videoHighQuality: true,
-              ),
-              onWillPop: () {
-                return Future.value(true);
-              },
+            return Scaffold(
+                appBar: AppBar(
+                actions: [],
+                ),
+                body:
+                  WillPopScope(
+                  child: TweetVideo(
+                    widget.tweetVM.getDisplayTweet(),
+                    autoPlay: true,
+                    enableFullscreen: false,
+                    videoHighQuality: true,
+                  ),
+                  onWillPop: () {
+                    return Future.value(true);
+                  },
+                )
             );
           },
         ));

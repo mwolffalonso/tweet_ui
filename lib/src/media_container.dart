@@ -239,13 +239,18 @@ class _MediaContainerState extends State<MediaContainer>
           ? () {
               Navigator.push(context, MaterialPageRoute(
                 builder: (_) {
-                  return PhotoViewGallery(
-                    pageOptions: galleryPageOptions,
-                    pageController: PageController(initialPage: photoIndex),
+                  return Scaffold(
+                    appBar: AppBar(
+                      actions: [],
+                    ),
+                    body:
+                          PhotoViewGallery(
+                            pageOptions: galleryPageOptions,
+                            pageController: PageController(initialPage: photoIndex),
+                          ),
                   );
-                },
-              ));
-            }
+              }));
+          }
           : () => this.widget.onTapImage(allPhotos, photoIndex, hashcode),
       child: Hero(
         child: Image(
